@@ -1,3 +1,5 @@
 class AstronautsController < ApplicationController
-  require 'pry'; binding.pry
+  def index
+    @astronauts = Astronaut.all
+  end
 end

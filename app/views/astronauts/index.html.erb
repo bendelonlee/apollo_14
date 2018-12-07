@@ -1,0 +1,8 @@
+<h1>Austronauts Index</h1>
+<% @astronauts.each do |astronaut| %>
+<h3><%= astronaut.name %></h3>
+<ul>
+<li><%= astronaut.age %></li>
+<li><%= astronaut.job %></li>
+</ul>
+<% end %>
