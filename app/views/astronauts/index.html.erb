@@ -7,5 +7,7 @@
 <ul>
 <li><%= astronaut.age %></li>
 <li><%= astronaut.job %></li>
+<h5>Missions:</h5>
+  <p><%= astronaut.missions.order(:title).pluck(:title).join(", ")%></p>
 </ul>
 <% end %>
